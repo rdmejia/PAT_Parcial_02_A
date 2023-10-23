@@ -1,5 +1,20 @@
 # Parcial 02
 
+- [Parcial 02](#parcial-02)
+  - [Instrucciones](#instrucciones)
+  - [Introducción](#introducción)
+  - [Ejercicio 1 (20 puntos)](#ejercicio-1-20-puntos)
+    - [Ejemplo 1.1](#ejemplo-11)
+  - [Ejemplo 1.2](#ejemplo-12)
+  - [Ejemplo 1.3](#ejemplo-13)
+    - [Restricciones](#restricciones)
+  - [Ejercicio 2 (25 puntos)](#ejercicio-2-25-puntos)
+    - [Ejemplo 2.1](#ejemplo-21)
+  - [Ejemplo 2.2](#ejemplo-22)
+    - [Restricciones](#restricciones-1)
+  - [Ejercicio 3 (40 puntos)](#ejercicio-3-40-puntos)
+    - [Ejemplo 3.1](#ejemplo-31)
+
 ## Instrucciones
 
 1. Para iniciar, debe crear un *Fork* del repositorio:
