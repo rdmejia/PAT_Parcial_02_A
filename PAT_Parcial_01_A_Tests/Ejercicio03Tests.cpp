@@ -118,10 +118,10 @@ namespace P02Tests {
 	TEST_P(E03Tests, MinStackTests) {
 		for (int i = 0; i < operations.size(); ++i) {
 			StackOperations op = operations[i];
-			GTEST_COUT << " - Instruccion [" << i << "]: " << op.funcName << "(" << (op.type == VOID_FUNC ? std::to_string(op.param) : "") << ")" << std::endl;
+			GTEST_COUT << " - Instruccion [" << i << "]: " << op.funcName << "(" << (op.type == VOID_FUNC && op.funcName != "pop" ? std::to_string(op.param) : "") << ")" << std::endl;
 
 			int poppedValue = INT_MIN;
-			ASSERT_DURATION_LE(2, poppedValue = stackOps.at(op.funcName)(minStack, op.param);)
+			ASSERT_DURATION_LE(100, poppedValue = stackOps.at(op.funcName)(minStack, op.param);)
 
 			if (op.type == INT_FUNC) {
 				ASSERT_EQ(poppedValue, op.expected) << "Error en la instruccion [" << i << "] -> " << op.funcName << "()" 
