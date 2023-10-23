@@ -171,3 +171,8 @@ Para resolver este problema, debe implementar una estructura de datos lineal y d
 ```
 
 ___
+### Restricciones
+
+- -2<sup>31</sup> <= value <= 2<sup>31</sup>
+- Las funciones `pop()`, `top()` y `getMin()` siempre serán llamadas en pilas no vacías.
+- La cantidad de llamadas a `push()`, `pop()`, `top()` y `getMin()` no excederá 3*10<sup>4</sup>.
