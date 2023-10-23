@@ -4,7 +4,7 @@ MinStack::MinStack()
 {
 }
 
-void MinStack::push(int val)
+void MinStack::push(int value)
 {
 }
 

@@ -4,7 +4,7 @@ class MinStack
 public:
 	MinStack();
 
-	void push(int val);
+	void push(int value);
 
 	void pop();
 
