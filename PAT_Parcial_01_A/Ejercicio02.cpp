@@ -2,29 +2,25 @@
 
 int Ejercicio02::countStudents(vector<char>* students, vector<char>* sandwiches)
 {
-    int studentsWithoutPreferredSandwich = 0;
-
-    for (int i = 0; i < students->size(); ++i) {
-        char preferredSandwich = (*students)[i];
-        bool foundPreferredSandwich = false;
-
-        for (int j = 0; j < sandwichesLeft; ++j) 
+    if (students->empty() || sandwiches->empty())
+    {
+		return students->size();
+	}
+	int i = 0;
+	int j = 0;
+	while (i < students->size() && j < sandwiches->size())
+    {
+		if (students->at(i) == sandwiches->at(j))
         {
-            if ((*sandwiches)[j] == preferredSandwich) 
-            {
-                sandwichesLeft--;
-                (*sandwiches).erase((*sandwiches).begin() + j);
-                foundPreferredSandwich = true;
-                break;
-            }
-        }
-
-        if (!foundPreferredSandwich) {
-            studentsWithoutPreferredSandwich = students->size() - i;
-            break;
-        }
-    }
-
-    return studentsWithoutPreferredSandwich;
+			students->erase(students->begin() + i);
+			sandwiches->erase(sandwiches->begin() + j);
+			i = 0;
+			j = 0;
+		}
+		else {
+			i++;
+		}
+	}
+	return students->size();
 }
 
