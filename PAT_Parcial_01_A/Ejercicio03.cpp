@@ -29,7 +29,7 @@ int MinStack::top()
     if (head != nullptr) {
         return head->value;
     }
-	return 0;
+	return -1;
 }
 
 int MinStack::getMin()
@@ -37,5 +37,5 @@ int MinStack::getMin()
     if (head != nullptr) {
         return head->min;
     }
-	return 0;
+	return -1;
 }
