@@ -2,7 +2,7 @@
 
 int Ejercicio02::countStudents(vector<char>* students, vector<char>* sandwiches)
 {
-    int studentsWithoutPreferredSandwich = 0;x
+    int studentsWithoutPreferredSandwich = 0;
 
     for (int i = 0; i < students->size(); ++i) {
         char preferredSandwich = (*students)[i];
